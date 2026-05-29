@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Kings Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #c97a2b;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .btn {
+            background: #e67e22;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center/cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #f99a00;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px;
+        }
+        .container{
+    display:flex;
+    gap:20px;
+    }
+
+    @media (max-width:768px){
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    body{
+        font-size:16px;
+    }
+}
+
+    @media (max-width:480px){
+
+    header{
+        padding:20px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    body{
+        font-size:14px;
+    }
+}
+    </style>
+</head>
+
+<body>
+   <header>
+        <h1>Fresh Kings Bakery</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="order page.html">Order Online</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+</header>
+
+<section class="hero">
+    <h2>Freshly Baked with Love</h2>
+    <p>Delicious Cakes, Pastries & Breads</p>
+    <button class="btn">Order Online</button>
+</section>
+
+<section class="section">
+    <h2>Our Bestsellers</h2>
+    <div class="cards">
+
+        <div class="card">
+           <img src="images\picture 5.jpg" alt="Description of the image" width="300px" height="300px">
+            <h3>Chocolate Cake</h3>
+            <button class="btn">Learn More</button>
+        </div>
+
+        <div class="card">
+                <img src="images\picture 3.jpg" alt="Description of the image" width="300px" height="300px">
+            <h3>Sourdough Bread</h3>
+            <button class="btn">Learn More</button>
+        </div>
+
+        <div class="card">
+            <img src="images\picture 4.jpg" alt="Description of the image" width="300px" height="300px">
+            <h3>Buttery Croissants</h3>
+            <button class="btn">Learn More</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Get In Touch</h2>
+    <form>
+        <input type="text" placeholder="Name" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <textarea placeholder="Message"></textarea><br><br>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Fresh Kings Bakery | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

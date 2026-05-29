@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Fresh Kings Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+      <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f2;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #c97a2b;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .btn {
+            background: #e67e22;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact-img {
+            width: 100px;
+        }
+
+        footer {
+            background: #f99a00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container{
+    display:flex;
+    gap:20px;
+    }
+
+    @media (max-width:768px){
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    body{
+        font-size:16px;
+    }
+}
+
+    @media (max-width:480px){
+
+    header{
+        padding:20px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    body{
+        font-size:14px;
+    }
+}
+    </style>
+</head>
+
+<header>
+        <h1>Fresh Kings Bakery</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="order page.html">Order Online</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Contact Us</h2>
+    </section>
+
+<section>
+
+    <p>Email: info@freshkingsbakery.com</p>
+    <p>Phone: +27  158 456 789</p>
+    <p>Location:Gauteng,Germiston,South Africa</p>
+
+    <h3>Send us a message</h3>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="name" placeholder="Enter your full name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Enter your email address"><br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message" placeholder="Enter your message here"></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+</section>
+
+
+
+<footer>
+    <p>&copy; 2026 Fresh Kings Bakery</p>
+</footer>
+
+</body>
+</html>

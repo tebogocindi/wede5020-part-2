@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Kings Bakery - Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f2;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #c97a2b;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .btn {
+            background: #e67e22;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        
+        .button {
+            background: #e67e22;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .card img {
+            width: 75%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #f99a00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fresh Kings Bakery</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="order page.html">Order Online</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+</header>
+
+<section>
+    <img src="images/price.list.jpeg" alt="Price List" width="400px" height="400px">
+</section>
+
+<main>
+    <h2>Order Online</h2>
+        <form id="order-form">
+            <div class="menu-item">
+                <input type="checkbox" id="bread" name="items" value="Bread">
+                <label for="bread">White Bread - <span class="price">R18.00</span></label>
+                <label for="bread-qty">Quantity:</label>
+                <input type="number" id="bread-qty" name="bread-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="cake" name="items" value="Cake">
+                <label for="cake">Cake - <span class="price">R280.00</span></label>
+                <label for="cake-qty">Quantity:</label>
+                <input type="number" id="cake-qty" name="cake-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="baguette" name="items" value="Baguette">
+                <label for="baguette">Baguette - <span class="price">R14.50</span></label>
+                <label for="baguette-qty">Quantity:</label>
+                <input type="number" id="baguette-qty" name="baguette-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="sourdough" name="items" value="Sourdough">
+                <label for="sourdough">Sourdough Bread - <span class="price">R26.00</span></label>
+                <label for="sourdough-qty">Quantity:</label>
+                <input type="number" id="sourdough-qty" name="sourdough-qty" min="1" value="1">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="croissant" name="items" value="Croissant">
+                <label for="croissant">Croissant - <span class="price">R16.00</span></label>
+                <label for="croissant-qty">Quantity:</label>
+                <input type="number" id="croissant-qty" name="croissant-qty" min="1" value="1">
+            </div>
+        </form>
+
+        <button class="btn" type="button" id="submit-order-btn">Submit Order</button>
+        
+        <section>
+            <h2>Order Summary</h2>
+            <div id="order-summary">
+                <!-- Order summary will be displayed here -->
+            </div>
+        </section>
+        
+        
+
+</main>
+
+
+<footer>
+    <p>&copy; 2024 Fresh Kings Bakery. All rights reserved.</p>
+</footer>
+</body>
+</html>
