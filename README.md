@@ -10,3 +10,4 @@ I was done typing so i had to ensure that everything is in order and to make sur
 
 28 May 2026 
 this is the day i check everything before submitting to ensure my work is in order to do and i can be able to submit knowing all my work is in order.
+reading through the poe part 2 i saw it said we should identify key breakpoint for the users so i did that as well.
